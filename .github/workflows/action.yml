@@ -4,6 +4,6 @@ jobs:
   action-job:
     runs-on: ubuntu-latest
     steps: 
-      - uses: action/checkout@v2
+      - uses: action/githubactions@v2
       - name: say something
         run: echo "i am working github action file"
