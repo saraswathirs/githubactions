@@ -1,4 +1,4 @@
-ame: action file1
+name: action file1
 on: [push]
 jobs:
   action-job:
