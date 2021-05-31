@@ -4,6 +4,6 @@ jobs:
   action-job:
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/githubactions@master
+      - uses: saraswathirs/githubactions@master
       - name: say something
         run: echo "i am working github action file"
