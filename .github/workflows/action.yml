@@ -6,6 +6,6 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          githubactions: ${{ secrets.GITHUB_TOKEN }}
       - name: say something
         run: echo "i am working github action file"
