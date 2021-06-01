@@ -15,12 +15,14 @@ jobs:
         node-version: [16,17,18]
     steps:
       - name: use node js ${{matrix.node-version}}
+        run: action file
       - uses: actions/checkout@master
         with:
           node-version: ${{matrix.node-version}}
       - name: check the code
+        run: test action file
       - uses: actions/checkout@v2
-      -  run: hello world
+      
       
 
       - name: run the code 
