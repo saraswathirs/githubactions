@@ -1,0 +1,29 @@
+name: Github-action
+
+on:
+  push:
+    branches: [ master]
+  pull_request:
+    branches: [ master ]
+# a workflow contains more and more jobs
+jobs:
+  test-build:
+    name: test-githubaction
+    runs-on: ubuntu-latest
+    strategy: 
+      matrix:
+        node-version: [16,17,18]
+    steps:
+      - name: use node js ${{matrix.node-version}}
+      - uses: actions/checkout@master
+        with:
+          node-version: ${{matrix.node-version}}
+      - name: check the code
+      - uses: actions/checkout@v2
+      
+
+      - name: run the code 
+      - uses: actions/checkout@v2
+         env:
+          username: SARASWATHI
+          password: $DOCKERHUB_PASSWORD  
