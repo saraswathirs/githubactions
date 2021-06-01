@@ -22,13 +22,13 @@ jobs:
         
       - name: check the code
         run: test action file
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
       
       
 
       - name: run the code 
         run: test env
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
         env: 
           username: SARASWATHI
           password: $DOCKERHUB_PASSWORD  
