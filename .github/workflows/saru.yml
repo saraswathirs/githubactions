@@ -16,19 +16,19 @@ jobs:
     steps:
       - name: use node js ${{matrix.node-version}}
         run: action file
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v1
         with:
           node-version: ${{matrix.node-version}}
         
       - name: check the code
         run: test action file
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v1
       
       
 
       - name: run the code 
         run: test env
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v1
         env: 
           username: SARASWATHI
           password: $DOCKERHUB_PASSWORD  
