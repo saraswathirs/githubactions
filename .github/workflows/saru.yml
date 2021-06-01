@@ -27,6 +27,6 @@ jobs:
 
       - name: run the code 
       - uses: actions/checkout@v2
-        env: |
+        env: 
           username: SARASWATHI
           password: $DOCKERHUB_PASSWORD  
