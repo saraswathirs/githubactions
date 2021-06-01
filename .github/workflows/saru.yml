@@ -20,6 +20,7 @@ jobs:
           node-version: ${{matrix.node-version}}
       - name: check the code
       - uses: actions/checkout@v2
+      -  run: hello world
       
 
       - name: run the code 
