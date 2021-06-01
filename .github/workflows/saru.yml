@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           node-version: ${{matrix.node-version}}
+        
       - name: check the code
         run: test action file
       - uses: actions/checkout@v2
@@ -26,6 +27,7 @@ jobs:
       
 
       - name: run the code 
+        run: test env
       - uses: actions/checkout@v2
         env: 
           username: SARASWATHI
